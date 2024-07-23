@@ -1,0 +1,454 @@
+@font-face {
+    font-family: "Kallisto";
+    font-weight: 700;
+    font-style: normal;
+    src: url("Kallisto Bold.otf") format("opentype");
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.715);
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    font-family: "Kallisto", sans-serif;
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.097);
+    z-index: -1;
+}
+
+header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.645) 100%);
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%) !important;
+}
+
+nav ul {
+    margin: 0 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    justify-content: space-evenly;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%) !important;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #f8f5f5;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Kallisto";
+    -webkit-transition: 0.2s ease all;
+    transition: 0.2s ease all;
+    padding: 7px;
+}
+
+nav ul li a:hover {
+    -webkit-box-shadow: 0 -16px 0 0 rgba(253, 204, 14, 0.5) inset !important;
+    box-shadow: 0 -16px 0 0 rgba(253, 204, 14, 0.5) inset !important;
+}
+
+nav ul li a.AW-Logo:hover {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+header img {
+    display: inline-block;
+    width: 100px;
+    vertical-align: middle;
+}
+
+section {
+    color: #ffffff;
+}
+
+h2 {
+    text-align: center;
+}
+
+.main-container {
+    position: relative;
+}
+
+.blur {
+    position: absolute;
+    top: 756px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(179.84deg, rgba(0, 0, 0, 0) -0.54%, rgba(0, 0, 0, 0.9) 43.81%);
+}
+
+.gradient {
+    z-index: 100;
+    height: 8em;
+    width: 100vw;
+    position: absolute;
+    bottom: calc(100vh - 800px) !important;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(35%, rgba(0, 0, 0, 0)), color-stop(87%, #000000));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, #000000 87%);
+    z-index: 0;
+    border-bottom: 1px solid #4d4d4d;
+    border-width: 1px 0;
+}
+
+.gif2 {
+    width: 100%;
+    height: 93vh;
+    filter: blur(5px);
+    z-index: 0;
+}
+
+.foreground-image {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 400px;
+    z-index: 1;
+}
+
+.aw-image img {
+    width: 100%;
+    max-width: 1320px;
+    position: relative;
+    transform: translateY(-11.6%);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.gif1 {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: url("https://i.giphy.com/9Gnbm29r7ftUA.webp");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: blur(7px) grayscale(50%);
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px;
+    z-index: 999;
+    position: fixed;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #d4d4d4;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Footer Styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 92%;
+    background: transparent;
+    color: #fff;
+    padding: 0px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding-bottom: 25px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.7)));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 80%);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.follow-button {
+    font-family: "Kallisto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.075em;
+    background: #fdcc0e;
+    border: none;
+    border-radius: 3px;
+    color: #000;
+    padding: 16px 28px;
+    cursor: pointer;
+    transition: .3s ease all;
+    position: absolute;
+    top: 75%;
+    left: 8%;
+    z-index: 998;
+}
+
+.follow-button:hover {
+    background: #000;
+    color: #fdcc0e;
+}
+
+.follow-box a {
+    text-decoration: none;
+}
+
+.follow-box:hover {
+    background: #000;
+    color: #fdcc0e;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 33px;
+    height: 34px;
+}
+
+.foot-bg {
+    width: 100%;
+    z-index: 1000;
+    bottom: 0;
+    position: fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.7)));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 80%);
+}
+
+.right-content {
+    margin-left: auto;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+/* Carousel Styling */
+.tour-dates {
+    padding: 20px 0px 20px 20px;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px; /* Adds space between carousel items */
+    overflow: hidden;
+}
+
+.tour-date {
+    position: relative;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: left;
+    margin-right: 20px; /* Adjust as needed for space between items */
+}
+
+.carousel-nav {
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    z-index: 1; /* Ensure it's above other elements */
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: calc(100vw - 200px);
+    border: 1px solid #4d4d4d;
+    border-width: 1px 0;
+    position: relative;
+    padding: 0 100px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+}
+.pading {
+    /*padding-bottom: 100%;*/
+    background: #000;
+    height: 14vh;
+}
+
+.carousel-nav button {
+    /*background-color: #000;*/
+    cursor: pointer;
+    z-index: 2; /* Adjust button z-index if necessary */
+    border-style: solid;
+    border-color: #4d4d4d;
+    border-width: 0 1px;
+    font-size: 1em;
+    height: 100%;
+    width: calc(100vw / 3);
+    text-align: center;
+    background: none;
+    outline: none;
+    padding: 16px;
+    border-radius: 0;
+}
+.carousel-nav button:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+.carousel-nav .bookmyshow-button {
+    cursor: pointer;
+    z-index: 2; /* Adjust button z-index if necessary */
+    font-size: 1em;
+    height: 100%;
+    width: calc(100vw / 3);
+    text-align: center;
+    background: none;
+    outline: none;
+    padding: 19px 0px 20px;
+    border-radius: 0;
+    text-decoration: none;
+}
+.carousel-nav .bookmyshow-button:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.tour-date img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.left h2 {
+    margin: 0;
+    color: #f8f5f5;
+}
+
+.left p {
+    margin: 5px 0 0;
+    color: #fdcc0e;
+}
+
+.right .ticket-button {
+    background: #fdcc0e;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Kallisto", sans-serif;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    header {
+        display: none;
+    }
+
+    main {
+        display: none;
+    }
+
+    .gif1 {
+        filter: blur(5px);
+    }
+}
+
+/* Mobile-specific styling for glitch */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-content {
+        display: none;
+    }
+
+    .right-content {
+        margin-left: 0;
+        text-align: center;
+        font-size: 0.6em;
+    }
+
+    footer {
+        padding: 40px 40px;
+        left: 0;
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+  

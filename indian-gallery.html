@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Gallery - Alan Walker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="glitch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            background-size: cover;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-position: center;
+            height: 100vh;
+            font-family: "Kallisto", sans-serif;
+            margin: 0;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .gif2 {
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            background: url("https://media.giphy.com/media/UpxfcK640tusSck6Se/giphy.gif?cid=790b7611q652fnvimdx4vm854zz0tjw240tc5jx1clewv4bn&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            z-index: -1;
+            filter: blur(7px) grayscale(50%);
+            opacity: 40%;
+        }
+        .pading2 {
+            background: #000;
+            height: 14vh;
+            opacity: 80%;
+            text-align: center;
+            align-items: center;
+            z-index: 1;
+        }
+        .pading3 {
+            background: #000;
+            height: 14vh;
+            text-align: center;
+            align-items: center;
+            z-index: 1;
+        }
+        .gradient2 {
+            z-index: 100;
+            height: 2em;
+            width: 100vw;
+            position: absolute;
+            top: calc(0vh + 70px) !important;
+            left: 0;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(35%, rgba(0, 0, 0, 0)), color-stop(87%, #000000));
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, #000000 87%);
+            z-index: 0;
+            border-bottom: 1px solid #4d4d4d;
+            border-width: 1px 0;
+        }
+        .slick-initialized .slick-slide {
+            display: block;
+            height: 58vh;
+        }
+        .slick-dotted.slick-slider {
+            margin-bottom: 0px;
+        }
+        .left p {
+            margin: 5px 0 0;
+            color: #ccc;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        .red-text {
+            font-size: 3em;
+            font-family: "Kallisto", sans-serif;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #fdcc0e;
+            letter-spacing: 4px;
+            text-align: center;
+            z-index: 999;
+            position: relative;
+            max-width: 100%;
+            padding: 19px 0px 22px;
+        }
+        .slick-dots li button {
+            display: none;
+        }
+        .tour-date img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="gif2"></div>
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="/walkerworld.html">Walkerworld</a></li>
+                <li><a href="https://awindia.netlify.app/#tour-dates">Tour Dates</a></li>
+                <li><a href="https://awindia.netlify.app/" class="AW-Logo"><img src="https://alanwalker.com/wp-content/themes/alanwalker/assets/AW-logo_main_white.png" alt="AW Logo"></a></li>
+                <li><a href="/indian-gallery.html">Indian Gallery</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="gradient2"></div>
+        <div class="blur">
+            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGVqeWRvbjh0aW9mZmc1dnp2bDJ3dTZ1cHpqcWQ3dTV1bGR3cjF6ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7ttSdbBUgSo0tCGY9R/giphy.gif" class="gif2">
+        </div>
+        <section id="tour-dates" class="tour-dates">
+            <div class="carousel">
+                <div class="tour-date">
+                    <img src="assests\alan-india\01.webp" alt="Alan Taj Mahal">
+                    <div class="info">
+                        <div class="left">
+                            <p>~ Alan Walker captures a moment in front of the iconic Taj Mahal during his aviation tour in India, 2019.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-date">
+                    <img src="assests\alan-india\02.webp" alt="Alan">
+                    <div class="info">
+                        <div class="left">
+                            <p>~ Alan Walker Meets With Indian Cricketer Virat Kohli At RCB Unbox, 2023.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-date">
+                    <img src="assests\alan-india\03.webp" alt="Alan">
+                    <div class="info">
+                        <div class="left">
+                            <p>~ Alan Walker shares a joyful moment with local children on the streets of Mumbai during his 2019 visit to India.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-date">
+                    <img src="assests\alan-india\04.webp" alt="Alan">
+                    <div class="info">
+                        <div class="left">
+                            <p>~ Alan Walker embraces Indian culture, donning traditional attire with style and grace.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-date">
+                    <img src="assests\alan-india\05.webp" alt="Alan">
+                    <div class="info">
+                        <div class="left">
+                            <p>~ Alan Walker poses majestically in front of the Taj Mahal, capturing a moment of his visit to India.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-date">
+                    <img src="assests\alan-india\06.webp" alt="Alan">
+                    <div class="info">
+                        <div class="left">
+                            <p>~ Alan Walker Makes Stylish Entry At M Chinnaswamy Stadium For RCB Unbox 2024 Event.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-date">
+                    <img src="assests\alan-india\07.webp" alt="Alan">
+                    <div class="info">
+                        <div class="left">
+                            <p>~ Alan Walker jumps in front of vibrant street art, blending his iconic style with the dynamic graffiti of India's streets.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-date">
+                    <img src="assests\alan-india\08.webp" alt="Alan">
+                    <div class="info">
+                        <div class="left">
+                            <p>~ Alan Walker radiates cultural elegance as he poses in traditional Indian attire, celebrating the rich heritage of India.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-date">
+                    <img src="assests\alan-india\09.webp" alt="Alan">
+                    <div class="info">
+                        <div class="left">
+                            <p>~ Alan Walker shares a moment with Indian composer and musician Pritam Chakraborty, blending musical worlds.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-date">
+                    <img src="assests\alan-india\10.webp" alt="Alan">
+                    <div class="info"> 
+                        <div class="left">
+                            <p>~ Alan Walker proudly holds the Indian flag, celebrating his connection with India.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-date">
+                    <img src="assests\alan-india\11.jpg" alt="Alan">
+                    <div class="info">
+                        <div class="left">
+                            <p>~ Alan Walker, Badshah, and Anirudh together, showcasing a fusion of global and Indian musical talent.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="carousel-nav">
+            <button class="left-swipe"><img src="back.svg" alt="Left"></button>
+            <a href="indian-gallery.html" class="bookmyshow-button">INDIAN GALLERY</a>
+            <button class="right-swipe"><img src="next.svg" alt="Right"></button>
+        </div>
+        <div class="pading2">
+            <h2 class="red-text">#KNOW-THE-WALKERS</h2>
+        </div>
+        <!--KNOW THE WALKERS-->
+        <section id="tour-dates" class="tour-dates">
+            <div class="carousel">
+                <div class="tour-date">
+                    <img src="assests\know-the-walkers\01.jpg" alt="Alan">
+                </div>
+                <div class="tour-date">
+                    <img src="assests\know-the-walkers\02.jpg" alt="Alan">
+                </div>
+                <div class="tour-date">
+                    <img src="assests\know-the-walkers\03.jpg" alt="Alan">
+                </div>
+                <div class="tour-date">
+                    <img src="assests\know-the-walkers\04.jpg" alt="Alan">
+                </div>
+                <div class="tour-date">
+                    <img src="assests\know-the-walkers\05.jpg" alt="Alan">
+                </div>
+                <div class="tour-date">
+                    <img src="assests\know-the-walkers\06.jpg" alt="Alan">
+                </div>
+            </div>
+        </section>
+        <div class="carousel-nav">
+            <button class="left-swipe"><img src="back.svg" alt="Left"></button>
+            <a href="indian-gallery.html" class="bookmyshow-button">INDIAN GALLERY</a>
+            <button class="right-swipe"><img src="next.svg" alt="Right"></button>
+        </div>
+        <div class="pading2">
+            <h2 class="red-text">#CHECKOUT-THESE-VIDEOS!</h2>
+        </div>
+        <!--HIGHLIGHTS-->
+        <section id="tour-dates" class="tour-dates">
+            <div class="carousel2">
+                <div class="tour-date">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/d2oGHy33QpU?si=KAEO0mUAwfOKUtij" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="tour-date">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PNUouUlKqHA?si=b6Ne54KNA9J2hT4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="tour-date">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/C_Y-oQdy9Ok?si=d3Wx-DyBbeOdm_RI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div> 
+                <div class="tour-date">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yk39jzdnhHc?si=0BAR6s5HQm7UiMM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <div class="carousel-nav">
+            <button class="left-swipe"><img src="back.svg" alt="Left"></button>
+            <a href="indian-gallery.html" class="bookmyshow-button">INDIAN GALLERY</a>
+            <button class="right-swipe"><img src="next.svg" alt="Right"></button>
+        </div>
+        <div class="pading3"></div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="left-content">
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/user/DjWalkzz"><img src="youtube.svg" alt="YouTube"></a>
+                    <a href="https://www.instagram.com/alanwalkermusic/"><img src="instagram.svg" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/alanwalkermusic"><img src="facebook.svg" alt="Facebook"></a>
+                    <a href="https://open.spotify.com/artist/7vk5e3vY1uw9plTHJAMwjN?si=fVd-ozhiQOOfLGKzwqCkLA"><img src="spotify.svg" alt="Spotify"></a>
+                    <a href="https://music.apple.com/us/artist/alan-walker/1062085272"><img src="itunes.svg" alt="iTunes"></a>
+                    <a href="https://www.amazon.com/Alan-Walker/e/B01N9TT56Q"><img src="amazon-music.svg" alt="Amazon Music"></a>
+                    <a href="https://www.tiktok.com/@alanwalkermusic"><img src="tiktok.svg" alt="Tiktok"></a>
+                    <a href="https://www.snapchat.com/add/alanwalkermusic"><img src="snapchat.svg" alt="Snapchat"></a>
+                    <a href="https://tidal.com/artist/9119308"><img src="tidal.svg" alt="Tidal"></a>
+                </div>
+            </div>
+            <div class="right-content">
+                <h2 class="hero glitch layers" data-text="एलन वॉकर भारत"><span>ALAN WALKER INDIA</span></h2>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+    $('.carousel2').slick({
+        slidesToShow: 1, // Display four items at once
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    $('.left-swipe').click(function(){
+        $('.carousel2').slick('slickPrev');
+    });
+
+    $('.right-swipe').click(function(){
+        $('.carousel2').slick('slickNext');
+    });
+});
+
+    </script>
+    <script>
+        $(document).ready(function(){
+    $('.carousel').slick({
+        slidesToShow: 4, // Display four items at once
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    $('.left-swipe').click(function(){
+        $('.carousel').slick('slickPrev');
+    });
+
+    $('.right-swipe').click(function(){
+        $('.carousel').slick('slickNext');
+    });
+});
+
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const tourDatesLink = document.querySelector('.main-nav a[href="/tour-dates"]');
+    const targetSection = document.getElementById('tour-dates');
+
+    function scrollToTourDates() {
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    tourDatesLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        history.pushState(null, '', '/tour-dates');
+        scrollToTourDates();
+    });
+
+    // Checks if the URL is /tour-dates and scroll to the section if it is
+    if (window.location.pathname === '/tour-dates') {
+        scrollToTourDates();
+    }
+
+    window.addEventListener('popstate', function(event) {
+        if (window.location.pathname === '/tour-dates') {
+            scrollToTourDates();
+        }
+    });
+});
+
+
+    </script><script>
+        $(document).ready(function(){
+    $('.carousel').slick({
+        slidesToShow: 1, // Display four items at once
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    $('.left-swipe').click(function(){
+        $('.carousel').slick('slickPrev');
+    });
+
+    $('.right-swipe').click(function(){
+        $('.carousel').slick('slickNext');
+    });
+});
+
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const tourDatesLink = document.querySelector('.main-nav a[href="/tour-dates"]');
+    const targetSection = document.getElementById('tour-dates');
+
+    function scrollToTourDates() {
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    tourDatesLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        history.pushState(null, '', '/tour-dates');
+        scrollToTourDates();
+    });
+
+    // Checks if the URL is /tour-dates and scroll to the section if it is
+    if (window.location.pathname === '/tour-dates') {
+        scrollToTourDates();
+    }
+
+    window.addEventListener('popstate', function(event) {
+        if (window.location.pathname === '/tour-dates') {
+            scrollToTourDates();
+        }
+    });
+});
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Alan Walker India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="glitch.css">
+    <style>
+        @font-face {
+            font-family: "Kallisto";
+            font-weight: 700;
+            font-style: normal;
+            src: url("Kallisto Bold.otf") format("opentype");
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+            background-size: cover;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-position: center;
+            height: 100vh;
+            font-family: "Kallisto", sans-serif;
+            margin: 0;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+        .gif1 {
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            background: url("https://media.giphy.com/media/UpxfcK640tusSck6Se/giphy.gif?cid=790b7611q652fnvimdx4vm854zz0tjw240tc5jx1clewv4bn&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            z-index: -1;
+            filter: blur(7px) grayscale(50%);
+            opacity: 40%;
+        }
+
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .about-text {
+            flex: 1;
+            padding: 20px;
+            max-width: 600px;
+            color: #d4d4d4;
+        }
+
+        .about-text h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-wrap: wrap;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .about-image {
+            flex: 1;
+            max-width: 600px;
+            padding: 20px;
+            
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="gif1"></div>
+    <div class="foot-bg"></div>
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="walkerworld.html">Walkerworld</a></li>
+                <li><a href="https://awindia.netlify.app/#tour-dates">Tour Dates</a></li>
+                <li><a href="https://awindia.netlify.app/" class="AW-Logo"><img src="https://alanwalker.com/wp-content/themes/alanwalker/assets/AW-logo_main_white.png" alt="AW Logo"></a></li>
+                <li><a href="/indian-gallery.html">Indian Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="about-container">
+        <div class="about-text">
+            <h2 class="underlines">ABOUT</h2>
+            <p>
+                ALAN WALKER INDIA is a dedicated platform created exclusively for Alan Walker's Indian fanbase. Launched in 2024, this initiative aims to strengthen the community of Indian Walkers and offer them a unique and immersive experience within the Walkerworld. The website is maintained by local community managers who are passionate about bringing Alan Walker's music and message closer to his fans in India.
+            </p>
+            <p class="underline"><strong>Purpose:</strong><br></p>
+            <p>
+                The primary goal of ALAN WALKER INDIA is to foster a sense of community among Indian fans of Alan Walker. By providing a localized platform, the entity ensures that fans have access to the latest news, exclusive content, and events specifically tailored to their interests. This initiative is part of Alan Walker's broader effort to connect with his global audience on a more personal level.
+            </p>
+            <p class="underline"><strong>Features:</strong><br></p>
+            <p>
+                - Exclusive Content: Indian Walkers can access exclusive content, including behind-the-scenes videos, interviews, and sneak peeks of upcoming projects.<br>
+                - Local Events: The platform promotes and organizes local events, such as concerts, meet-and-greets, and fan gatherings, allowing fans to connect with each other and experience Alan Walker's music live.<br>
+                - Community Engagement: Through forums, social media integrations, and interactive features, ALAN WALKER INDIA encourages fans to engage with one another, share their experiences, and participate in community activities.<br>
+                - Merchandise: Fans can purchase exclusive merchandise designed specifically for the Indian market, featuring unique designs and limited-edition items.
+            </p>
+            <p class="underline"><strong>Walkerworld Experience:</strong><br></p>
+            <p>
+                The website offers an immersive dive into the Walkerworld, allowing Indian fans to explore Alan Walker's universe in a way that resonates with their local culture and preferences. This includes localized content, collaborations with Indian artists, and special initiatives that highlight the fusion of Alan Walker's music with Indian influences.
+            </p>
+            <p>By bridging the gap between Alan Walker and his Indian fans, ALAN WALKER INDIA plays a crucial role in enhancing the fan experience and building a strong, united community of Walkers in India.</p>
+        </div>
+        <div class="about-image">
+            <img src="about.jpg" alt="Alan Walker India">
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="left-content">
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/user/DjWalkzz"><img src="youtube.svg" alt="YouTube"></a>
+                    <a href="https://www.instagram.com/alanwalkermusic/"><img src="instagram.svg" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/alanwalkermusic"><img src="facebook.svg" alt="Facebook"></a>
+                    <a href="https://open.spotify.com/artist/7vk5e3vY1uw9plTHJAMwjN?si=fVd-ozhiQOOfLGKzwqCkLA"><img src="spotify.svg" alt="Spotify"></a>
+                    <a href="https://music.apple.com/us/artist/alan-walker/1062085272"><img src="itunes.svg" alt="iTunes"></a>
+                    <a href="https://www.amazon.com/Alan-Walker/e/B01N9TT56Q"><img src="amazon-music.svg" alt="Amazon Music"></a>
+                    <a href="https://www.tiktok.com/@alanwalkermusic"><img src="tiktok.svg" alt="Tiktok"></a>
+                    <a href="https://www.snapchat.com/add/alanwalkermusic"><img src="snapchat.svg" alt="Snapchat"></a>
+                    <a href="https://tidal.com/artist/9119308"><img src="tidal.svg" alt="Tidal"></a>
+                </div>
+            </div>
+            <div class="right-content">
+                <h2 class="hero glitch layers" data-text="एलन वॉकर भारत"><span>ALAN WALKER INDIA</span></h2>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tourDatesLink = document.querySelector('.main-nav a[href="/tour-dates"]');
+            const targetSection = document.getElementById('tour-dates');
+    
+            function scrollToTourDates() {
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+    
+            tourDatesLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                history.pushState(null, '', '/tour-dates');
+                scrollToTourDates();
+            });
+    
+            // Check if the URL is /tour-dates and scroll to the section if it is
+            if (window.location.pathname === '/tour-dates') {
+                scrollToTourDates();
+            }
+    
+            window.addEventListener('popstate', function(event) {
+                if (window.location.pathname === '/tour-dates') {
+                    scrollToTourDates();
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

@@ -20,3 +20,25 @@ nextBtn.addEventListener('click', () => {
     counter++;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
+
+//music
+document.addEventListener('DOMContentLoaded', function() {
+    const musicControl = document.querySelector('.music-control');
+    const musicIcon = document.getElementById('music-icon');
+    const backgroundMusic = document.getElementById('background-music');
+    
+    musicControl.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (backgroundMusic.paused) {
+            backgroundMusic.play();
+            musicIcon.src = 'assests/icons/audio_off.svg'; // Update with the path to your pause icon
+        } else {
+            backgroundMusic.pause();
+            musicIcon.src = 'assests/icons/audio_on.svg'; // Update with the path to your play icon
+        }
+    });
+
+    // Auto play the music when the page loads
+    backgroundMusic.play();
+    musicIcon.src = 'assests/icons/audio_on.svg'; // Set the initial state to pause
+});

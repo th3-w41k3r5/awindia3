@@ -207,6 +207,12 @@ footer {
     align-items: center;
     width: 100%;
 }
+.music-control img {
+    width: 33px;
+    height: 34px;
+    cursor: pointer;
+}
+
 
 .follow-button {
     font-family: "Kallisto", sans-serif;
@@ -380,6 +386,11 @@ footer {
     border-radius: 5px;
     text-decoration: none;
     font-family: "Kallisto", sans-serif;
+    transition: .3s ease all;
+}
+.right .ticket-button:hover {
+    background: #000;
+    color: #fdcc0e;
 }
 
 

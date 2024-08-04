@@ -277,15 +277,15 @@
         <div class="footer-container">
             <div class="left-content">
                 <div class="social-icons">
-                    <a href="https://www.youtube.com/user/DjWalkzz"><img src="youtube.svg" alt="YouTube"></a>
-                    <a href="https://www.instagram.com/alanwalkermusic/"><img src="instagram.svg" alt="Instagram"></a>
-                    <a href="https://www.facebook.com/alanwalkermusic"><img src="facebook.svg" alt="Facebook"></a>
-                    <a href="https://open.spotify.com/artist/7vk5e3vY1uw9plTHJAMwjN?si=fVd-ozhiQOOfLGKzwqCkLA"><img src="spotify.svg" alt="Spotify"></a>
-                    <a href="https://music.apple.com/us/artist/alan-walker/1062085272"><img src="itunes.svg" alt="iTunes"></a>
-                    <a href="https://www.amazon.com/Alan-Walker/e/B01N9TT56Q"><img src="amazon-music.svg" alt="Amazon Music"></a>
-                    <a href="https://www.tiktok.com/@alanwalkermusic"><img src="tiktok.svg" alt="Tiktok"></a>
-                    <a href="https://www.snapchat.com/add/alanwalkermusic"><img src="snapchat.svg" alt="Snapchat"></a>
-                    <a href="https://tidal.com/artist/9119308"><img src="tidal.svg" alt="Tidal"></a>
+                    <a href="https://www.youtube.com/user/DjWalkzz"><img src="/assests/icons/youtube.svg" alt="YouTube"></a>
+                    <a href="https://www.instagram.com/alanwalkermusic/"><img src="/assests/icons/instagram.svg" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/alanwalkermusic"><img src="/assests/icons/facebook.svg" alt="Facebook"></a>
+                    <a href="https://open.spotify.com/artist/7vk5e3vY1uw9plTHJAMwjN?si=fVd-ozhiQOOfLGKzwqCkLA"><img src="/assests/icons/spotify.svg" alt="Spotify"></a>
+                    <a href="https://music.apple.com/us/artist/alan-walker/1062085272"><img src="/assests/icons/itunes.svg" alt="iTunes"></a>
+                    <a href="https://www.amazon.com/Alan-Walker/e/B01N9TT56Q"><img src="/assests/icons/amazon-music.svg" alt="Amazon Music"></a>
+                    <a href="https://www.tiktok.com/@alanwalkermusic"><img src="/assests/icons/tiktok.svg" alt="Tiktok"></a>
+                    <a href="https://www.snapchat.com/add/alanwalkermusic"><img src="/assests/icons/snapchat.svg" alt="Snapchat"></a>
+                    <a href="#" class="music-control"><img src="/assests/icons/audio_on.svg" alt="Play" id="music-icon"></a>
                 </div>
             </div>
             <div class="right-content">
@@ -293,7 +293,7 @@
             </div>
         </div>
     </footer>
-
+    <audio id="background-music" src="https://th3-w41k3r5.github.io/hosting/aw-mashup.mp3" loop></audio>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
@@ -359,6 +359,26 @@
 
     </script>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const musicControl = document.querySelector('.music-control');
+    const musicIcon = document.getElementById('music-icon');
+    const backgroundMusic = document.getElementById('background-music');
+    
+    musicControl.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (backgroundMusic.paused) {
+            backgroundMusic.play();
+            musicIcon.src = 'assests/icons/audio_off.svg';
+        } else {
+            backgroundMusic.pause();
+            musicIcon.src = 'assests/icons/audio_on.svg';
+        }
+    });
+
+    // Auto play the music when the page loads
+    backgroundMusic.play();
+    musicIcon.src = 'assests/icons/audio_on.svg';
+});
     document.addEventListener('DOMContentLoaded', function() {
     const tourDatesLink = document.querySelector('.main-nav a[href="/tour-dates"]');
     const targetSection = document.getElementById('tour-dates');
@@ -391,7 +411,8 @@
 });
 
 
-    </script><script>
+    </script>
+    <script>
         $(document).ready(function(){
     $('.carousel').slick({
         slidesToShow: 1, // Display four items at once
